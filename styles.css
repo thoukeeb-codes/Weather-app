@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url(https://ishortn.ink/2W9xTo);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+#main-container {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(211, 211, 211, 0.288);
+  width: 600px;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+}
+#location-access {
+  font-size: 40px;
+  font-weight: bold;
+}
+#grantLoc {
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+}
+#search-con {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#textInput {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#textInput::placeholder {
+  text-align: center;
+}
+#serchB {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(99, 87, 87);
+  font-size: 20px;
+}
+#loader {
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#location {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#details-con {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+#details {
+  background-color: #cccccc63;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+}
+/* sliders */
+.switch {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="images/png" href="https://ishortn.ink/3WXymm">
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+      <h1>WEATHER APP</h1>
+      <div id="search-con">
+        <form action="" id="contentToHide" style="display: none">
+          <input type="text" id="textInput" placeholder="enter city" /><button
+            id="serchB"
+            type="button"
+            onclick="handleButtonClick() "
+          >
+            search
+          </button>
+        </form>
+      </div>
+      <div id="loader" style="display: none">
+        <img
+          src="images/loading.gif"
+          alt=""
+          style="max-width: 300px; object-fit: cover"
+        />
+      </div>
+      <div id="location-access">
+        <div>grant location access</div>
+        <img
+          src="images/location.png"
+          alt=""
+          style="object-fit: cover; width: 70px"
+        />
+        <div>
+          <button id="grantLoc" type="button" onclick="getLocation()">
+            grant location access
+          </button>
+        </div>
+      </div>
+      <div class="" id="location" style="display: none">
+        <h2 id="city-name"></h2>
+        <h3 id="weather-status">clear scy</h3>
+        <img src="" alt="" />
+        <h1 class="temperature-c" id="temperature-c"></h1>
+        <div id="details-con">
+          <div id="details">
+            <img src="images/wind.png" alt="" style="object-fit: cover; width:
+            70px;"/ >
+            <h3>wind speed</h3>
+            <h4 id="wind-speed">kms</h4>
+          </div>
+          <div id="details">
+            <img
+              src="images/humidity.png"
+              alt=""
+              style="object-fit: cover; width: 70px"
+            />
+            <h3>humidity</h3>
+            <h4 id="humidity">50</h4>
+          </div>
+          <div id="details">
+            <img
+              src="images/cloud.png"
+              alt=""
+              style="object-fit: cover; width: 70px"
+            />
+            <h3>clouds</h3>
+            <h4 id="clouds">55</h4>
+          </div>
+        </div>
+      </div>
+
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" />
+        <span class="slider"></span>
+      </label>
+      <h1 id="catswitch">switch to search by city</h1>
+      
+    </div>
+    <h4>created by Thoukeeb Ali</h1>
+
+    <script src="index.js"></script>
+  </body>
+</html>
